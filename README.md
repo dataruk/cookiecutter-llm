@@ -77,17 +77,17 @@ The directory structure of your new project looks like this:
 │   ├── __init__.py    <- Makes src a Python module
 │   │
 │   ├── data           <- Scripts to download or generate data
-│   │   └── make_dataset.py
+│   │   └── ....py
 │   │
-│   ├── features       <- Scripts to turn raw data into features for modeling
-│   │   └── build_features.py
+│   ├── features       <- Scripts to turn raw data into features (i.e chunks for VectorDBs)
+│   │   └── ....py
 │   │
-│   ├── models         <- Scripts to train models and then use trained models to make
-│   │   │                 predictions
-│   │   ├── predict_model.py
-│   │   └── train_model.py
+│   ├── prompts       <- Where prompts for the LLM application reside
+│   │   └── prompts.py
 │   │
-│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+│   ├── models         <- Scripts for LLM models / applications
+│   │
+│   └── visualization  <- Scripts to create exploratory and results oriented visualizations (Streamlit, Gradio)
 │       └── visualize.py
 │
 └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
