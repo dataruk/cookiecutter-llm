@@ -25,9 +25,13 @@ $ conda install cookiecutter
 
 ### To start a new project, run:
 ------------
+For now:
+
+    cookiecutter https://github.com/dataruk/cookiecutter-llm
+
+In future:
 
     cookiecutter -c v1 https://github.com/dataruk/cookiecutter-llm
-
 
 [![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
 
